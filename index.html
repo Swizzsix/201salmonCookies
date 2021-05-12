@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Salmon Cookies Franchise</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap" rel="stylesheet">
+    <title>PSC </title>
+    <link href="./css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="./css/style.css" type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <header>
-      <h1>Salmon Cookies</h1>
+      <h1>Pat's Salmon Cookies LLC</h1>
     </header>
     <main>
-      </h2>Sales:</h2>
-      <div id="storeFront">
-      </div>
+      <section>
+        <h2>Who Are We?</h2>
+        <ul>
+          <li>ESTABLISHED: 1944</li>
+          <li>CREATOR: Grandma Russert</li>
+          <li>More To Follow on a Later Date!</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Add City</h2>
+        <form id="addCityForm">
+          <fieldset>
+            <legend>Sales Information</legend>
+            <label>Location
+              <input name="location" type="text"/>
+            </label>
+            <label>Minimum Customer Per Hour:
+              <input name="minCustomerPerHour" type="text" />
+            </label>
+            <label>Maximum Customer Per Hour:
+              <input name="maxCustomerPerHour" type="text" />
+            </label>
+            <label>Average Sale Per Customer:
+              <input name="avgSalePerCustomer" type="text" />
+            </label>
+            <label>Hours of Operation:
+              <input name="hoursOfOperationArray" type="text" />
+            </label>
+            <span>List hours of operation, seperated by commas (ex. 0600, 0700)</span>
+          </fieldset>
+          <fieldset>
+            <legend>Ingedient Information</legend>
+            <p>Recipe</p>
+            <label>
+              <input name="isGlutenFree" type="checkbox" />
+                Gluten Free
+            </label>
+            <label>
+              <input name="isOrganicWholeGrain" type="checkbox" />
+                Whole Grain
+            </label>
+            <label>
+              <input name="isZeroSugar" type="checkbox" />
+                Zero Sugar
+            </label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section>
+        <h2>Salmon Cookie Store Fronts:</h2>
+        <div id="cityStoreFront">
+          <!-- generate this from js: -->
+        </div>
+      </section>
     </main>
     <footer>
+      <p>
+        We are based out of South Tacoma!` <a href="https://www.google.com/search?q=tacoma+wa&tbm=isch&hl=en&tbs&sa=X&ved=2ahUKEwi-gLfc_8TwAhVrAjQIHfzKCQIQzKUFegQIARAX&biw=1903&bih=937" target="_blank">Tacoma</a>
+      </p>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="js/about.js"></script>
   </body>
 </html>
